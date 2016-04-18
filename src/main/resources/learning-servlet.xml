@@ -13,7 +13,26 @@
 		http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd        
 		http://www.springframework.org/schema/util
 		http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+		
+	<context:annotation-config></context:annotation-config>
 	
+	<!-- 启用spring mvc注解 -->
+	<mvc:annotation-driven/>
 	
+	<!-- 注解类所在的包 -->
+	<context:component-scan base-package="com.huang.controller"></context:component-scan>
+	
+	<!-- 静态资源 -->
+	<mvc:resources location="/assets/" mapping="/assets/**"/>
+	
+	<!-- 完成请求和注解POJO的映射 -->
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+	
+	<!-- 对转向页面的路径解析 -->
+	<bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp"/>
+	</bean>
 	
 </beans>

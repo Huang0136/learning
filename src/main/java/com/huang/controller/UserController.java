@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * 用户控制器
+ * 用户以及登录控制器
  * @author huanggh
  * @since 2016-04-19 18:37
  */
@@ -18,17 +18,25 @@ public class UserController {
 	
 	private static final Logger logger = Logger.getLogger(UserController.class);
 	
+	@RequestMapping(value="/loginPage", method=RequestMethod.GET)
+	public String loginPage() {
+		
+		return "common/login";
+	}
+	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login(String username, String password,
 			HttpServletRequest req, HttpServletResponse resp) {
 		logger.info("login Controller...");
 		
-		return "";
+		return "index";
 	}
 	
+	@RequestMapping(value="/logout", method=RequestMethod.GET)
 	public String logout(HttpServletRequest req) {
+		logger.info("logout func...");
 		
-		return "";
+		return "index";
 	}
 	
 }

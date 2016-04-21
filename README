@@ -1,19 +1,15 @@
 Java web Learning Project
 
 1、前端
-	HTML、CSS、javascript、Jquery、Bootstrap、angularJS
-
+	HTML、CSS、javascript、Jquery、Bootstrap、angularJS、bootstrap模板
 2、database
 	MySQL、ORACLE、Redis
-
 3、后台
-	Java、jsp/servlet、Spring、Spring MVC、Hibernate、JPA、Spring Data JPA、
+	Java、jsp/servlet、Spring、Spring MVC、Hibernate、JPA、Spring Data JPA、MyBatis
 	Apache Shiro、Spring Security、Ehcache、Maven、Git、Junit
-
 4、部署环境
-	redhat
-	
+	redhat、docker
 5、其他技术
-	集群、负载均衡、缓存
+	MySQL数据库集群、Redis集群、应用服务器集群、负载均衡、缓存
 	
 http://blog.csdn.net/yanzi1225627/article/details/12885317

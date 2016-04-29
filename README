@@ -1,16 +1,26 @@
 Java web Learning Project
 
-1、前端
-	HTML、CSS、javascript、Jquery、Bootstrap、angularJS、bootstrap模板
-2、database
-	MySQL、ORACLE、Redis
-3、后台
-	Java、jsp/servlet、Spring、Spring MVC、Hibernate、JPA、Spring Data JPA、MyBatis
-	Apache Shiro、Spring Security、Ehcache、Maven、Git、Junit
-4、部署环境
-	redhat、docker
-5、其他技术
-	MySQL数据库集群、Redis集群、应用服务器集群、负载均衡、缓存
-	
+项目技术选型：
+  1、前端(HTML、CSS、javascript、Jquery、AngularJS、Bootstrap)
+  2、后端,都配置集群
+    1) Java路线
+        Servlet、Filter	
+        Hibernate、JPA、Spring Data JPA、MyBatis
+        Spring
+        Spring MVC
+        Ehcache
+        Apache Shiro、Spring Security
+        Maven、Git、Junit
+    2) Golang
+                        待解决的问题:filter、session集群
+    3、数据库(MySQL、Redis),都配置集群
+    4、环境
+        Redhat、docker
+        
+Restful API、API认证、按需加载
+
+用户
+
 git http://blog.csdn.net/yanzi1225627/article/details/12885317
 shiro http://blog.csdn.net/jadyer/article/details/12208847?utm_source=tuicool&utm_medium=referral
+

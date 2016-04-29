@@ -17,5 +17,7 @@
 	
 	
 	<import resource="learning-shiro.xml"/>
+	<import resource="learning-hibernate.xml"/>
+	<import resource="learning-aop.xml"/>
 	
 </beans>
